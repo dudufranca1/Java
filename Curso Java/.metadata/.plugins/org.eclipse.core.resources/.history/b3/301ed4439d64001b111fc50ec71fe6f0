@@ -1,0 +1,5 @@
+package com.estudando.exerciciossb.model.entities;
+
+public class Produto {
+
+}

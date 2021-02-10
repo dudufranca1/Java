@@ -1,0 +1,24 @@
+package classe.desafio;
+
+public class Jantar {
+	public static void main(String[] args) {
+		
+		Pessoa p1 = new Pessoa("Eduardo", 77);
+		//p1.nome = "Eduardo";
+		//p1.peso = 77;
+		
+		Comida c1 = new Comida();
+		c1.nome = "Caramão";
+		c1.peso = 0.500;
+		
+		Comida c2 = new Comida();
+		c2.nome = "Empada de frango";
+		c2.peso = 0.500;
+		
+		System.out.printf("Meu nome é %s e eu tenho %.2f kg.\n",p1.nome, p1.peso);
+		System.out.printf("Hoje eu queria comer %s e %s",c1.nome, c2.nome);
+		
+		System.out.println("Se eu comesse isso eu ficaria com %.2f kg" +p1.comer());
+		
+	}
+}

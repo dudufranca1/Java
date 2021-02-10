@@ -1,0 +1,5 @@
+package com.estudando.exerciciossb.model.repositories;
+
+public interface ProdutoRepository {
+
+}

@@ -1,0 +1,24 @@
+package com.estudando.exerciciossb.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.estudando.exerciciossb.model.entities.Produto;
+import com.estudando.exerciciossb.model.repositories.ProdutoRepository;
+
+@RestController
+@RequestMapping("/api/produtos")
+public class ProdutoController {
+	
+	@Autowired // injetando o objeto
+	private ProdutoRepository produtoRepository;
+	
+	@PostMapping
+	public @ResponseBody Produto novoProduto (Produto produto) {
+		produtoRepository.save(produto); // enviado automáticamente para o mysql e também o ID retornado de forma correta
+		return produto;
+	}
+}

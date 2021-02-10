@@ -1,0 +1,27 @@
+package com.estudando.exerciciossb.controllers;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MetodosHttpController {
+
+	public String get() {
+		return "Requisição GET";
+	}
+	
+	public String post() {
+		return "Requisição POST";
+	}
+	
+	public String put() {
+		return "Requisição PUT";
+	}
+	
+	public String patch() {
+		return "Requisição PATCH";
+	}
+	
+	public String delete() {
+		return "Requisição DELETE";
+	}
+}

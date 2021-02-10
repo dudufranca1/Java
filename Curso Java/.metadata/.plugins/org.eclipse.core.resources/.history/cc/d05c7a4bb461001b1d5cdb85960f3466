@@ -1,0 +1,15 @@
+package com.estudando.exerciciossb.controllers;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.estudando.exerciciossb.models.Calculadora;
+
+@RequestMapping("/calculadora")
+public class CalculadoraController {
+	
+	@GetMapping
+	public Calculadora somar (int a, int b) {
+		return new Calculadora (a + b);
+	}
+}

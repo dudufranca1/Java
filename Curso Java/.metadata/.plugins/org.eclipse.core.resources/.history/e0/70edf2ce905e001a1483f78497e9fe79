@@ -1,0 +1,24 @@
+package Fundamentos;
+
+public class A_37_DesafioOperadoresAritméticos {
+	public static void main(String[] args) {
+		
+		double a = 6, b = 3, c = 2, a2 = 1, b2 = 5, c2 = 7;
+		double valor1, valor2;
+		
+		valor1 = (Math.pow((a * (b + c) / b * c),2));
+		
+		//a * (b + c) / b * c;
+		
+		
+		valor2 = (Math.pow(((a2 - b2) * (c - c2) / 2) ,2));
+		
+		
+		System.out.println(valor1);
+		System.out.println(valor2);
+		//Math.pow(valor2, b2)
+		
+		
+	}
+
+}
